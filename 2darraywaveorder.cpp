@@ -1,0 +1,17 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+   vector<vector<int>> arr={{1,2},{3,4}};
+   for(int i=0;i<2;i++){
+    if(i%2==0){
+        for(int j=0;j<2;j++){
+           cout<<arr[j][i]<<",";
+        }
+    }
+    else{
+        for(int j=1;j>=0;j--){
+           cout<<arr[j][i]<<",";
+        }
+   }
+}}
